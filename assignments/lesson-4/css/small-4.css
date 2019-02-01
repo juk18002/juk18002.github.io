@@ -1,0 +1,73 @@
+
+  
+  body {
+    background-color:#d0db97;
+}
+
+header {
+margin:10px auto;
+background-color:#3a7d44;
+border: 1px solid #bbb;
+text-align: center;
+}
+
+header img, .motto {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color: #254d32;
+font-family: 'Exo 2', sans-serif;
+font-style: semi-bold;
+} 
+
+h1 {
+font-size:2.5em;
+}
+
+h2 {
+display: block;
+font-size: 1.5em;
+margin: 0.24em;
+line-height:1.5em;
+font-weight: bold;
+}
+
+p{
+font-family: 'Exo 2', sans-serif;
+font-style: normal;
+margin: 0.24em;
+}
+
+nav {
+background-color:#69b578;
+}
+
+nav a {
+color:#d0db97;
+}
+  
+li a {
+color: #d0db97;
+text-align: center;
+text-decoration: none;
+}
+
+nav ul {
+display: inline-block;
+width: 90%;
+list-style-type:none;
+background-color:#69b578;
+font-size:1.2em;
+}
+
+.selected
+{
+background-color:#3a7d44;
+}
+.selected a
+{
+color:#254d32;
+}
