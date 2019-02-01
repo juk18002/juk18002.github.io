@@ -50,17 +50,28 @@ color:#d0db97;
 }
   
 li a {
+display:block;
 color: #d0db97;
 text-align: center;
 text-decoration: none;
+font-family: 'Exo 2', sans-serif;
+font-style: normal;
+font-size: 1.8em;
+}
+
+li {
+    border-bottom: 1px solid #555;
 }
 
 nav ul {
 display: inline-block;
-width: 90%;
+width: 100%;
 list-style-type:none;
 background-color:#69b578;
 font-size:1.2em;
+margin: 0;
+padding: 0;
+border: 1px solid black;
 }
 
 .selected
