@@ -3,7 +3,6 @@ larger screens
 */
 
  @media (min-width: 481px) {
-     //CSS
      ul {
          list-style-type: none;
          margin: 0;
@@ -29,12 +28,11 @@ phone size
 */
 
  @media (min-width: 320px) and (max-width: 480px) {
-     //CSS
      ul {
          list-style-type: none;
          margin: 0;
          padding: 0;
-         width: 100%;
+         width: 100%
      }
      li a {
          display: block;
@@ -49,6 +47,6 @@ phone size
          display: none;
      }
      .forecast {
-         display:none;
+         display: none;
      }
  }
