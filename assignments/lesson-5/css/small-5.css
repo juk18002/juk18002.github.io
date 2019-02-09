@@ -90,6 +90,9 @@ li a:hover {
 
 .herodiv img {
   max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
 }
 
 .weathersummary {
@@ -113,6 +116,7 @@ li a:hover {
   background-color: #254d32ed;
   padding: 10px;
 }
+
 .grid-item {
   background-color: #69b578;
   border: 1px solid black;
@@ -122,28 +126,37 @@ li a:hover {
 }
 
 #article-row, #contact-row {
-  display:flex;
-  flex-flow:row wrap;
+  display: flex;
+  flex-flow: row wrap;
   padding: 0 15px 15px;
-  margin:20px;
-  align-items:center;
-  background-color:#3a7d44;
+  margin: 20px;
+  align-items: center;
+  background-color: #3a7d44;
 }
 
+#contact-row img {
+  max-width: 75%;
+  height: auto;
+  vertical-align: center;
+  margin: 10px;
+}
+.forecast {
+  text-align: center;
+}
 
-.rightColumn, .leftColumn  {
+.rightColumn, .leftColumn {
   width: 48%;
-  padding:.5em;
-  flex:1 0 15em;
-  margin:.5em;
+  padding: .5em;
+  flex: 1 0 15em;
+  margin: .5em;
 }
 
 .footerRightColumn {
   width: 48%;
- display:flex;
-  justify-content:flex-end;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  margin:.5em;
+  margin: .5em;
 }
 
 .footerRightColumn * {
@@ -151,8 +164,8 @@ li a:hover {
 }
 
 .footerLeftColumn {
-  width:48%;  
+  width: 48%;
   display: inline-block;
-  text-align:left;
-  margin:.5em;
+  text-align: left;
+  margin: .5em;
 }
