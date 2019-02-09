@@ -106,7 +106,7 @@ li a:hover {
   box-shadow: 0 0 30px #fff;
 }
 
-#weathervalue {
+.weathervalue {
   color: #254d32ed;
 }
 
