@@ -1,0 +1,54 @@
+ /*
+larger screens
+*/
+
+ @media (min-width: 481px) {
+     //CSS
+     ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+     }
+     ul li {
+         float: left;
+     }
+     ul li a {
+         display: block;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     .mobile-top-menu {
+         display: none;
+     }
+ }
+
+ /*
+phone size
+*/
+
+ @media (min-width: 320px) and (max-width: 480px) {
+     //CSS
+     ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         width: 100%;
+     }
+     li a {
+         display: block;
+         text-decoration: none;
+         font-size: 1.8em;
+     }
+     li {
+         text-align: center;
+         color: #d0db97
+     }
+     li :not(.mobile-top-menu) {
+         display: none;
+     }
+     .forecast {
+         display:none;
+     }
+ }
