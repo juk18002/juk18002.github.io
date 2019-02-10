@@ -43,7 +43,7 @@ phone size
          text-align: center;
          color: #d0db97
      }
-     li :not(.mobile-top-menu) {
+    .selected, .notselected {
          display: none;
      }
      .forecast {
