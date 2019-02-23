@@ -1,4 +1,4 @@
-@media (min-width: 900px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .navigation li:first-child {
     display: none;
   }
@@ -13,7 +13,7 @@
     display: block;
   }
   .grid-gallery {
-    grid-template-columns: repeat(3, .75fr);
+    grid-template-columns: repeat(2, .75fr);
   }
   .herodiv {
     margin: 10px auto;
