@@ -52,7 +52,7 @@ nav {	margin: 0 auto;	background-color: #69b578;	}
 @media (min-width: 481) {
   .navigation li:first-child { display: none;	}
 	.navigation li { display: inline-block; margin-right: 1rem;}	
-	.navigation li a { color: yellow;}
+	.navigation li a { color: #d0db97;}
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .navigation li:first-child { display: block;	}
