@@ -3,8 +3,8 @@ body {
 }
 
 header {
-  display:flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin: 10px auto;
   background-color: #3a7d44;
   border: 1px solid #bbb;
@@ -20,7 +20,7 @@ header img, .motto {
 h1, h2, h3, h4, h5, h6 {
   color: #254d32;
   font-family: 'Exo 2', sans-serif;
-  font-style: semi-bold;
+  font-weight: bold;
 }
 
 h1 {
@@ -76,7 +76,7 @@ nav {
   background-color: #254d32;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .navigation li:first-child {
     display: block;
   }
@@ -84,7 +84,6 @@ nav {
     display: none;
     margin-right: 1rem;
   }
-
   .forecast {
     display: none;
   }
@@ -96,7 +95,7 @@ nav {
 
 .selected {
   background-color: #3a7d44;
-  border:.5px solid #254d32;
+  border: .5px solid #254d32;
 }
 
 .selected a {
@@ -128,7 +127,8 @@ nav {
 
 .grid-container {
   max-width: 75%;
-  margin-right: auto; margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background-color: #254d32ed;
@@ -150,9 +150,9 @@ nav {
   display: grid;
   grid-template-columns: repeat(1, .75fr);
   column-gap: 1rem;
-  row-gap:1rem;
+  row-gap: 1rem;
   background-color: #3a7d44;
-  padding:1rem;
+  padding: 1rem;
 }
 
 .grid-item-gallery {
@@ -164,15 +164,19 @@ nav {
 }
 
 .grid-item-gallery img {
-margin:.25rem;
-max-width: 100%;
+  margin: .25rem;
+  max-width: 100%;
   display: inline-block;
   vertical-align: middle;
 }
 
-.grid-item-gallery:hover {box-shadow: 0 0 50px #254d32ed;}
+.grid-item-gallery:hover {
+  box-shadow: 0 0 50px #254d32ed;
+}
 
-figcaption {font-size: smaller;}
+figcaption {
+  font-size: smaller;
+}
 
 #article-row, #contact-row {
   display: flex;
