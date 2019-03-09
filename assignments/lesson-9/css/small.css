@@ -41,6 +41,10 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.2em;
+}
+
 p {
   font-family: 'Exo 2', sans-serif;
   font-style: normal;
@@ -214,22 +218,33 @@ h2 {
 
 .scrolling-wrapper {
   display: flex;
-    overflow-x: auto;
-
+    overflow-x:auto;
+    overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
 }
-.wrapper div {
+
+.scrolling-wrapper 
+ div {
   margin-right: 15px;
 }
-.wrapper::-webkit-scrollbar {
+
+
+.scrolling-wrapper::-webkit-scrollbar {
   display: none;
 }
 
 .card {
-  width: 150px;
-  height: 75px;
+  width: 320px;
+  min-width: 320px;
+  height: 315px;
   border: 1px solid #3a7d44;
-  border-radius: 10px;
   background-image: radial-gradient(circle, #d0db97, #b8d28c, #a0c884, #85bf7d, #69b578);
+}
+
+.scrolling-wrapper h3 {
+  font-style: italic;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 @media (max-width: 599px) {
