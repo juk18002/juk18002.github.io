@@ -4,7 +4,9 @@ var cardHolder = document.getElementById("townDiv");
 var townList = new Array("Preston", "Soda Springs", "Fish Haven");
 
 //get the json data
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = 'https://juk18002.github.io/assignments/lesson-9/data/towndata.json';
+      
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
