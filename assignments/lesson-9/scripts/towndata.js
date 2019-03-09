@@ -1,6 +1,8 @@
 //get the card container div
 var cardHolder = document.getElementById("townDiv");
 
+var townList = new Array("Preston", "Soda Springs", "Fish Haven");
+
 //get the json data
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -10,43 +12,48 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-    var townData = request.response;
+    var varJSON = request.response;
 
-    createTownCards(townData);
+    createTownCards(varJSON);
 }
 
-function createTownCards(jsonObj) {
-    var townsJson = jsonObj['towns'];
-    var testP = document.body.appendChild('p');
-    testP.textContent = "This is a test";
+function createTownCards(textJSON) {
 
-    //create the card and add it to the container
-    for (var i = 0; i < towns.length; i++) {
-        //card for town
-        var divCard = document.createElement('div');
-        divCard.className = 'card';
-        //town name
-        var h2TownName = document.createElement('h2');
-        h2TownName.textContent = townsJson[i].name;
-        //motto
-        var pMotto = document.createElement('p');
-        pMotto.textContent = townsJson[i].motto;
-        //year founded
-        var pYear = document.createElement('p');
-        pYear.textContent = townsJson[i].yearFounded;
-        //current pop
-        var pPopulation = document.createElement('p');
-        pPopulation.textContent = townsJson[i].currentPopulation;
-        //avg rainfall
-        var pAvgRain = document.createElement('p');
-        pAvgRain.textContent = townsJson[i].averageRainfall;
+    var townsJson = textJSON.towns;
 
-        //construct the card
-        divCard.appendChild(h2TownName);
-        divCard.appendChild(pMotto);
-        divCard.appendChild(pYear);
-        divCard.appendChild(pPopulation);
-        divCard.appendChild(pAvgRain);
-        cardHolder.appendChild(divCard);
+    for (var i = 0; i < townsJson.length; i++) {
+        var objJSON = townsJson[i];
+
+        if (townList.indexOf(objJSON.name) > -1) {
+            var divCard = document.createElement('div');
+            divCard.className = 'card';
+            //town name
+            var h2TownName = document.createElement('h2');
+            h2TownName.textContent = objJSON.name;
+            //Motto
+            var h3Motto = document.createElement('h3');
+            h3Motto.textContent = objJSON.motto;
+            //year founded
+            var pYear = document.createElement('p');
+            pYear.textContent = "Year Founded: " + objJSON.yearFounded.toString();
+            //current pop
+            var pPopulation = document.createElement('p');
+            pPopulation.textContent = "Current Population: " + objJSON.currentPopulation;
+            //avg rainfall
+            var pAvgRain = document.createElement('p');
+            pAvgRain.textContent = 'Average Rainfall: ' + objJSON.averageRainfall + '"';
+            //img
+            var iPreston = document.createElement('img');
+            iPreston.src = "images/preston-320.jpeg";
+            iPreston.alt = "Preston";
+
+            divCard.appendChild(h2TownName);
+            divCard.appendChild(h3Motto);
+            divCard.appendChild(pYear);
+            divCard.appendChild(pPopulation);
+            divCard.appendChild(pAvgRain);
+            divCard.appendChild(iPreston);
+            cardHolder.appendChild(divCard);
+        }
     }
 }

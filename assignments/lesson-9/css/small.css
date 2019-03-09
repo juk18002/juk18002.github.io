@@ -186,6 +186,21 @@ h2 {
   margin-right: auto;
 }
 
+#welcome h1,
+h2, p {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color:#d0db97
+}
+
+#welcome {
+  margin: 15px;
+  background-color: #3a7d44;
+
+}
+
 .navigation {
   list-style: none;
   margin: 0;
@@ -218,13 +233,12 @@ h2 {
 
 .scrolling-wrapper {
   display: flex;
-    overflow-x:auto;
-    overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-.scrolling-wrapper 
- div {
+.scrolling-wrapper div {
   margin-right: 15px;
 }
 
@@ -247,19 +261,8 @@ h2 {
   font-weight: normal;
 }
 
-@media (max-width: 599px) {
-  .navigation li:first-child {
-    display: block;
-  }
-
-  .navigation li {
-    display: none;
-    margin-right: 1rem;
-  }
-
-  .forecast {
-    display: none;
-  }
+.card h1, h2, h3, p {
+  color: #254d32;
 }
 
 .responsive li {
@@ -397,4 +400,19 @@ figcaption {
   display: inline-block;
   text-align: left;
   margin: .5em;
+}
+
+@media (max-width: 599px) {
+  .navigation li:first-child {
+    display: block;
+  }
+
+  .navigation li {
+    display: none;
+    margin-right: 1rem;
+  }
+
+  .forecast {
+    display: none;
+  }
 }
