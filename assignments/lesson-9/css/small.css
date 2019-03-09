@@ -186,19 +186,13 @@ h2 {
   margin-right: auto;
 }
 
-#welcome h1,
-h2, p {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color:#d0db97
-}
-
 #welcome {
-  margin: 15px;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #3a7d44;
-
+  padding-left: 15px;
 }
 
 .navigation {
@@ -231,6 +225,11 @@ h2, p {
   background-color: #254d32;
 }
 
+#town-wrapper {
+  display: block;
+  margin: 20px;
+}
+
 .scrolling-wrapper {
   display: flex;
   overflow-x: auto;
@@ -239,20 +238,31 @@ h2, p {
 }
 
 .scrolling-wrapper div {
-  margin-right: 15px;
+  margin: 15px;
 }
 
 
 .scrolling-wrapper::-webkit-scrollbar {
   display: none;
 }
+#welcome   {
+  display: block;
+  text-align: center;
+  
+  margin: 20px;
+}
 
-.card {
+.card { 
+  position: relative;
   width: 320px;
   min-width: 320px;
-  height: 315px;
+  height: 360px;
   border: 1px solid #3a7d44;
   background-image: radial-gradient(circle, #d0db97, #b8d28c, #a0c884, #85bf7d, #69b578);
+}
+
+.card img {
+  position: absolute; bottom: 0;
 }
 
 .scrolling-wrapper h3 {
@@ -261,9 +271,18 @@ h2, p {
   font-weight: normal;
 }
 
-.card h1, h2, h3, p {
+#welcome h1, h2, h3, p {
+color: #d0db97
+}
+
+.card h1,
+h2,
+h3,
+p {
   color: #254d32;
 }
+
+
 
 .responsive li {
   display: block;

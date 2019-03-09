@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Preston Weather Page</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Exo+2');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <div id="content">
+
+        <header>
+            <div class="logoDiv">
+                <img id="logo" src="images/cloud_forecast_sun_weather_icon_48.png" alt="logo">
+                <div class="motto">
+                    <h1>Dave's Weather</h1>
+                    <p id="logoText"> The sun doesn't always shine! </p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodaspring.html">Soda Springs</a></li>
+                    <li class="selected"><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <h1>Fish Haven</h1>
+            </div>
+            <div class="herodiv">
+                <img src="images/preston-default.jpeg" alt="cloudy" srcset="images/preston-320.jpeg 600w,
+                         images/preston-1200.jpeg 1100w">
+
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span class="weathervalue">&#176;F</span></p>
+                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span></p>
+                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span class="weathervalue">&#176;F</span></p>
+                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span></p>
+                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span class="weathervalue">mph</span></p>
+                </section>
+            </div>
+            <div class="forecast">
+                <h2>5 Day Forecast</h2>
+
+                <div class="grid-container">
+                    <div class="grid-item">Mon</div>
+                    <div class="grid-item">Tuesday</div>
+                    <div class="grid-item">Wednesday</div>
+                    <div class="grid-item">Thursday</div>
+                    <div class="grid-item">Friday</div>
+                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
+                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
+                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
+                    <div class="grid-item"><img src="images/cloud_forecast_sun_weather_icon_48.png" alt="cloudy"></div>
+                    <div class="grid-item"><img src="images/rain.png" alt="rain"></div>
+                    <div class="grid-item">89&#176; F</div>
+                    <div class="grid-item">87&#176; F</div>
+                    <div class="grid-item">85&#176; F</div>
+                    <div class="grid-item">78&#176; F</div>
+                    <div class="grid-item">72&#176; F</div>
+                </div>
+            </div>
+
+
+            <section id="article-row">
+                <!-- this is second row of content-->
+                <div class="leftColumn">
+                    <h2>
+                        Let's Get Out and Have Some Fun!
+                    </h2>
+                    <p>
+                        Winter doesn't have to stop our outdoor activities...
+                    </p>
+                </div>
+                <div class="rightColumn">
+                    <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
+                    <p> Photo by Visit Almaty from Pexels</p>
+                </div>
+            </section>
+
+            <section id="contact-row">
+                <div class="leftColumn">
+                    <h2>Dave's Weather Site</h2>
+                    <p>Somwhere Road</p>
+                    <p>Preston, ID</p>
+                    <p>867-5309</p>
+                    <p>davesweather@notreal.com</p>
+                </div>
+                <div class="rightColumn">
+                    <a href="https://goo.gl/maps/Kg6wT5pREJR2" target="_blank">
+                        <img src="images/preston-map-500.jpg" alt="Preston ID">
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="footerSection">
+
+                <div class="footerLeftColumn"><span id="currentDate"></span></div>
+
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons"
+                        title="Roundicons">Roundicons</a>
+                    from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                        target="_blank">CC
+                        3.0 BY</a></div>
+
+            </section>
+        </footer>
+    </div>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>
