@@ -271,17 +271,11 @@ h2 {
   font-weight: normal;
 }
 
-#welcome h1,
-h2,
-h3,
-p {
+#welcome h1, #welcome p, #welcome h3, #welcome h2  {
   color: #d0db97
 }
 
-.card h1,
-h2,
-h3,
-p {
+.card h1, .card h2, .card h3, .card p  {
   color: #254d32;
 }
 
@@ -436,3 +430,4 @@ figcaption {
 .responsive li {
   display: block;
 }
+
