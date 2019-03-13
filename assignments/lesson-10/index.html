@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dave's Weather Page</title>
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Exo+2');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style Sheet references -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Java Script file references -->
+    <script src="scripts/hamburger.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="logoDiv">
+                <img id="logo" src="images/cloud_forecast_sun_weather_icon_48.png" alt="logo">
+
+                <div class="motto">
+                    <h1>Dave's Weather</h1>
+                    <p id="logoText"> The sun doesn't always shine! </p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodaspring.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="welcome">
+                <h1>Welcome to Dave's Weather</h1> </br>
+                <h2>If you have an active lifestyle, you need to know what the weather is before you head outside.</h2>
+                <p>We strive our best to keep you in the know and informed.</p>
+            </div>
+
+            <div id="town-wrapper">
+            <div class="scrolling-wrapper" id="townDiv">
+                  <!-- this will be populated via javascript from json -->
+            </div>
+        </div>
+            <section id="article-row">
+               
+                <div class="leftColumn">
+                   <div class="leftColumn">
+                       <img src="images/icons8-fire-96.png"><img>
+                   </div>
+                   <div class="rightColumn">
+                    <h2>
+                        Stay up on the latest Talk
+                    </h2>
+                    <h3>by Author</h3>
+                    <p>
+                        Winter doesn't have to stop our outdoor activities...
+                    </p>
+                    </div>
+                </div>
+                <div class="rightColumn">
+                    <h2>Featured Gallery Photo</h2>
+                    <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
+                    <p> Photo by Visit Almaty from Pexels</p>
+                </div>
+            </section>
+        
+        </main>
+        
+        <footer>
+            <section id="footerSection">
+
+                <div class="footerLeftColumn"><span id="currentDate"></span></div>
+
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons"
+                        title="Roundicons">Roundicons</a>
+                    from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                        target="_blank">CC
+                        3.0 BY</a></div>
+
+            </section>
+        </footer>
+    </div>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
