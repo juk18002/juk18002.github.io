@@ -1,3 +1,9 @@
+//get the town name from calling page
+var script_tag = document.getElementById("forecastScript");
+var town = script_tag.getAttribute("data-town");
+
+var zip = getZipByTownName(town);
+
 var d = new Date();
 
 var d1 = new Date();
@@ -12,7 +18,7 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
-var apiURLString = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
+var apiURLString = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + ",us&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
 var baseIconURLString = "http://openweathermap.org/img/w/"
 var forecastRequest = new XMLHttpRequest();
 forecastRequest.open('GET', apiURLString, true);
@@ -40,7 +46,7 @@ forecastRequest.onload = function () {
                 //update day
                 document.getElementById(elem).innerHTML = weekday[d1.getDay()];
                 //update temp
-                document.getElementById(elem1).innerHTML = forecastData[j].main.temp;
+                document.getElementById(elem1).innerHTML = forecastData[j].main.temp.toFixed(0);
                 //update icon
                 var iconName = baseIconURLString + forecastData[j].weather[0].icon + ".png";
                 var iconAlt = forecastData[j].weather[0].main;

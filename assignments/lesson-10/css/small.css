@@ -273,7 +273,7 @@ form label.top input:valid {
 }
 
 .herodiv {
-  margin: 10px auto;
+  margin: 20px;  
   width: 90%;
 }
 
@@ -419,6 +419,24 @@ figcaption {
   display: inline-block;
   text-align: left;
   margin: .5em;
+}
+
+.forecast h1, .townname h1 {
+  font-size: 5rem;
+  color: #254d32;
+  text-align: center;
+}
+
+
+#townDiv {
+  display: flex;
+  margin: 20px auto;
+  padding: 20px;
+  justify-content: center;
+}
+#event-div {
+  font-size: 1.8rem;
+  color: #254d32;
 }
 
 @media (max-width: 599px) {

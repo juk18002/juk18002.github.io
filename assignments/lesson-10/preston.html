@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/large.css">
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getZipByTownName.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +44,7 @@
         </header>
 
         <main>
-            <div>
+            <div class="townname">
                 <h1>Preston</h1>
             </div>
             <div class="herodiv">
@@ -61,7 +63,7 @@
                 </section>
             </div>
             <div class="forecast">
-                <h2>5 Day Forecast</h2>
+                <h1>5 Day Forecast</h1>
 
                 <div class="grid-container">
                     <div class="grid-item"><span id="d1DofW">d1</span></div>
@@ -81,7 +83,6 @@
                     <div class="grid-item"><span id="d5temp"></span>&#176; F</div>
                 </div>
             </div>
-
 
             <section id="article-row">
                 <!-- this is second row of content-->
@@ -129,8 +130,8 @@
     </div>
 
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/weatherapi.js"></script>
-    <script src="scripts/forecast.js"></script>
+    <script id="weatherapiScript" data-town="Preston" src="scripts/weatherapi.js"></script>
+    <script id="forecastScript" data-town="Preston" src="scripts/forecast.js"></script>
     <script id="townEventScript" data-event="Preston" src="scripts/townevents.js"></script>
 </body>
 

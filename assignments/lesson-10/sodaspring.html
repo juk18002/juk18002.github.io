@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/large.css">
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getZipByTownName.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
         </header>
 
         <main>
-            <div>
+                <div class="townname">
                 <h1>Soda Springs</h1>
             </div>
             <div class="herodiv">
@@ -84,12 +85,11 @@
             <section id="article-row">
                 <!-- this is second row of content-->
                 <div class="leftColumn">
-                    <h2>
-                        Let's Get Out and Have Some Fun!
-                    </h2>
-                    <p>
-                        Winter doesn't have to stop our outdoor activities...
-                    </p>
+                        <h2>
+                                Upcoming Events in Town
+                            </h2>
+                            <div class="event" id="event-div">
+                            </div>
                 </div>
                 <div class="rightColumn">
                     <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
@@ -130,7 +130,9 @@
     </div>
 
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script id="weatherapiScript" data-town="Soda Springs" src="scripts/weatherapi.js"></script>
+    <script  id="forecastScript" data-town="Soda Springs" src="scripts/forecast.js"></script>
+    <script id="townEventScript" data-event="Soda Springs" src="scripts/townevents.js"></script>
 
 </body>
 
