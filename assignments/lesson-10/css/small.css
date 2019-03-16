@@ -11,18 +11,12 @@ header {
   text-align: center;
 }
 
-header img,
-.motto {
+header img, .motto {
   display: inline-block;
   vertical-align: middle;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #254d32;
   font-family: 'Exo 2', sans-serif;
   font-weight: bold;
@@ -78,19 +72,14 @@ form legend {
   padding: 0 .5rem;
 }
 
-form label.top,
-form label.top2,
-form div {
+form label.top, form label.top2, form div {
   display: block;
   padding-top: 1rem;
   color: #3a7d44;
   font-size: .75rem;
 }
 
-form label.top input,
-form label.top2 input,
-form label.top textarea,
-form label.top select {
+form label.top input, form label.top2 input, form label.top textarea, form label.top select {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
@@ -102,14 +91,11 @@ form label.top select {
   background-color: #F2F5E2;
 }
 
-form label.top input,
-form label.top textarea,
-form label.top select {
+form label.top input, form label.top textarea, form label.top select {
   padding: .75rem;
 }
 
-form label.top2 input,
-form label.top select {
+form label.top2 input, form label.top select {
   max-width: 21.5rem;
 }
 
@@ -177,8 +163,7 @@ form label.top input:valid {
 
 /*--------------------form-end------------------------------*/
 
-#thanks h1,
-h2 {
+#thanks h1, h2 {
   display: block;
   text-align: center;
   margin-left: auto;
@@ -247,7 +232,6 @@ h2 {
 #welcome {
   display: block;
   text-align: center;
-
   margin: 20px;
 }
 
@@ -271,11 +255,11 @@ h2 {
   font-weight: normal;
 }
 
-#welcome h1, #welcome p, #welcome h3, #welcome h2  {
+#welcome h1, #welcome p, #welcome h3, #welcome h2 {
   color: #d0db97
 }
 
-.card h1, .card h2, .card h3, .card p  {
+.card h1, .card h2, .card h3, .card p {
   color: #254d32;
 }
 
@@ -310,6 +294,7 @@ h2 {
 .weathervalue {
   color: #254d32ed;
 }
+
 
 .grid-container {
   max-width: 75%;
@@ -364,13 +349,38 @@ figcaption {
   font-size: smaller;
 }
 
-#article-row,
-#contact-row {
+.testDiv {
+  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.leftTest {
+  background-color: blue;
+  margin: .5rem;
+  width: 64%;
+  height: 250px;
+  flex: 2 0 15em;
+}
+
+.rightTest {
+  background-color: green;
+  margin: .5rem;
+  width: 32%;
+  height: 250px;
+  flex: 1 0 15em;
+}
+
+.event {
+  text-align: center;
+}
+#article-row, #contact-row {
   display: flex;
   flex-flow: row wrap;
   padding: 0 15px 15px;
   margin: 20px;
   align-items: center;
+  justify-content: center;
   background-color: #3a7d44;
 }
 
@@ -385,8 +395,7 @@ figcaption {
   text-align: center;
 }
 
-.rightColumn,
-.leftColumn {
+.rightColumn, .leftColumn {
   width: 48%;
   padding: .5em;
   flex: 1 0 15em;
@@ -396,7 +405,7 @@ figcaption {
 .footerRightColumn {
   width: 48%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin: .5em;
 }
@@ -416,12 +425,10 @@ figcaption {
   .navigation li:first-child {
     display: block;
   }
-
   .navigation li {
     display: none;
     margin-right: 1rem;
   }
-
   .forecast {
     display: none;
   }
@@ -430,4 +437,3 @@ figcaption {
 .responsive li {
   display: block;
 }
-

@@ -27,7 +27,7 @@
                     <p id="logoText"> The sun doesn't always shine! </p>
                 </div>
             </div>
-            
+
             <nav>
                 <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -51,6 +51,8 @@
 
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
+                    <h4><span id="todayText"></span></h4>
+                    <p>Current Condition: <span id="currentCond" class="weathervalue">Clear</span> </p>
                     <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span class="weathervalue">&#176;F</span></p>
                     <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span></p>
                     <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span class="weathervalue">&#176;F</span></p>
@@ -62,21 +64,21 @@
                 <h2>5 Day Forecast</h2>
 
                 <div class="grid-container">
-                    <div class="grid-item">Mon</div>
-                    <div class="grid-item">Tuesday</div>
-                    <div class="grid-item">Wednesday</div>
-                    <div class="grid-item">Thursday</div>
-                    <div class="grid-item">Friday</div>
-                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
-                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
-                    <div class="grid-item"><img src="images/sunny.png" alt="sunny"></div>
-                    <div class="grid-item"><img src="images/cloud_forecast_sun_weather_icon_48.png" alt="cloudy"></div>
-                    <div class="grid-item"><img src="images/rain.png" alt="rain"></div>
-                    <div class="grid-item">89&#176; F</div>
-                    <div class="grid-item">87&#176; F</div>
-                    <div class="grid-item">85&#176; F</div>
-                    <div class="grid-item">78&#176; F</div>
-                    <div class="grid-item">72&#176; F</div>
+                    <div class="grid-item"><span id="d1DofW">d1</span></div>
+                    <div class="grid-item"><span id="d2DofW">d2</span></div>
+                    <div class="grid-item"><span id="d3DofW">d3</span></div>
+                    <div class="grid-item"><span id="d4DofW">d4</span></div>
+                    <div class="grid-item"><span id="d5DofW">d5</span></div>
+                    <div class="grid-item" id="d1icon"></div>
+                    <div class="grid-item" id="d2icon"></div>
+                    <div class="grid-item" id="d3icon"></div>
+                    <div class="grid-item" id="d4icon"></div>
+                    <div class="grid-item" id="d5icon"></div>
+                    <div class="grid-item"><span id="d1temp"></span>&#176; F</div>
+                    <div class="grid-item"><span id="d2temp"></span>&#176; F</div>
+                    <div class="grid-item"><span id="d3temp"></span>&#176; F</div>
+                    <div class="grid-item"><span id="d4temp"></span>&#176; F</div>
+                    <div class="grid-item"><span id="d5temp"></span>&#176; F</div>
                 </div>
             </div>
 
@@ -85,11 +87,10 @@
                 <!-- this is second row of content-->
                 <div class="leftColumn">
                     <h2>
-                        Let's Get Out and Have Some Fun!
+                        Upcoming Events in Town
                     </h2>
-                    <p>
-                        Winter doesn't have to stop our outdoor activities...
-                    </p>
+                    <div class="event" id="event-div">
+                    </div>
                 </div>
                 <div class="rightColumn">
                     <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
@@ -118,20 +119,19 @@
 
                 <div class="footerLeftColumn"><span id="currentDate"></span></div>
 
-                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons"
-                        title="Roundicons">Roundicons</a>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>
                     from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                        target="_blank">CC
-                        3.0 BY</a></div>
-
+                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a></div>
+                <div> Weather data sourced from <a href="https://openweathermap.org/" title="Open Weather Maps">Open
+                        Weather Maps</a> </div>
             </section>
         </footer>
     </div>
 
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
-
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script id="townEventScript" data-event="Preston" src="scripts/townevents.js"></script>
 </body>
 
 </html>

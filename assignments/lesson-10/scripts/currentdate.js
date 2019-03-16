@@ -25,9 +25,12 @@ numMonth[11] = "December";
 
 // format: Monday, 6 April 2020
 
-
+var todayText = weekday[d.getDay()] + ", " + d.getDate() + " " + numMonth[d.getMonth()] + " " + d.getFullYear();
 var footerText = "&copy; " + weekday[d.getDay()] + ", " + d.getDate() + " " + numMonth[d.getMonth()] + " " + d.getFullYear() + " BYUI - David Jukes";
 
 //days[dt.getDay()] + ", " + dt.getDate() + " " + months[dt.getMonth()] + " " + dt.getFullYear();
 
 document.getElementById("currentDate").innerHTML = footerText;
+
+
+document.getElementById("todayText").innerHTML=todayText;

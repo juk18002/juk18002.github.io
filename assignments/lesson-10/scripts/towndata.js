@@ -1,7 +1,7 @@
 //get the card container div
 var cardHolder = document.getElementById("townDiv");
 
-var townList = new Array("Preston", "Soda Springs", "Fish Haven");
+var townList = new Array("Preston", "Soda Springs", "Fish Haven", "Franklin", "Greenville", "Placerton");
 
 //get the json data
 //var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
