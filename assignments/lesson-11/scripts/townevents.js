@@ -11,7 +11,7 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-    var varJSON = request.response;
+    var varJSON = JSON.parse(request.response);
     insertTownEvents(varJSON);
 }
 
@@ -30,6 +30,7 @@ function insertTownEvents(textJSON) {
                 newDiv.appendChild(pEvent);
             }
             eventHolder.appendChild(newDiv)
+            document.getElementById("map").innerHTML = objJSON.googleMapsURL;
         }
     }
 }

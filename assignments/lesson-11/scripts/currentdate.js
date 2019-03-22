@@ -31,6 +31,3 @@ var footerText = "&copy; " + weekday[d.getDay()] + ", " + d.getDate() + " " + nu
 //days[dt.getDay()] + ", " + dt.getDate() + " " + months[dt.getMonth()] + " " + dt.getFullYear();
 
 document.getElementById("currentDate").innerHTML = footerText;
-
-
-document.getElementById("todayText").innerHTML=todayText;

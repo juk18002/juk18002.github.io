@@ -28,7 +28,7 @@
                     <p id="logoText"> The sun doesn't always shine! </p>
                 </div>
             </div>
-            
+
             <nav>
                 <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -43,20 +43,26 @@
         </header>
 
         <main>
-                <div class="townname">
+            <div class="townname">
                 <h1>Soda Springs</h1>
             </div>
             <div class="herodiv">
                 <img src="images/preston-default.jpeg" alt="cloudy" srcset="images/preston-320.jpeg 600w,
-                         images/preston-1200.jpeg 1100w">
+                         images/preston-1200.jpeg 1100w"
+                    sizes="(max-width:320px) 320px, (max-width:600px) 600px, 1100px">
 
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span class="weathervalue">&#176;F</span></p>
-                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span></p>
-                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span class="weathervalue">&#176;F</span></p>
-                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span></p>
-                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span class="weathervalue">mph</span></p>
+                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span>
+                    </p>
+                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span>
+                    </p>
+                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span
+                            class="weathervalue">mph</span></p>
                 </section>
             </div>
             <div class="forecast">
@@ -85,11 +91,11 @@
             <section id="article-row">
                 <!-- this is second row of content-->
                 <div class="leftColumn">
-                        <h2>
-                                Upcoming Events in Town
-                            </h2>
-                            <div class="event" id="event-div">
-                            </div>
+                    <h2>
+                        Upcoming Events in Town
+                    </h2>
+                    <div class="event" id="event-div">
+                    </div>
                 </div>
                 <div class="rightColumn">
                     <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
@@ -106,9 +112,10 @@
                     <p>davesweather@notreal.com</p>
                 </div>
                 <div class="rightColumn">
-                    <a href="https://goo.gl/maps/Kg6wT5pREJR2" target="_blank">
-                        <img src="images/preston-map-500.jpg" alt="Preston ID">
-                    </a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77387294322!2d-111.91543021231536!3d42.09974160027784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1553285629486"
+                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
                 </div>
             </section>
         </main>
@@ -131,7 +138,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script id="weatherapiScript" data-town="Soda Springs" src="scripts/weatherapi.js"></script>
-    <script  id="forecastScript" data-town="Soda Springs" src="scripts/forecast.js"></script>
+    <script id="forecastScript" data-town="Soda Springs" src="scripts/forecast.js"></script>
     <script id="townEventScript" data-event="Soda Springs" src="scripts/townevents.js"></script>
 
 </body>

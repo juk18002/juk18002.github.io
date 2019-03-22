@@ -4,7 +4,7 @@ var town = script_tag.getAttribute("data-town");
 
 var zip = getZipByTownName(town);
 
-var apiURLString = "https://api.openweathermap.org/data/2.5/weather?ip=" + zip + ",usAPPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
+var apiURLString = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
 
 var weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', apiURLString, true);

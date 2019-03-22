@@ -49,17 +49,22 @@
             </div>
             <div class="herodiv">
                 <img src="images/preston-default.jpeg" alt="cloudy" srcset="images/preston-320.jpeg 600w,
-                         images/preston-1200.jpeg 1100w">
+                         images/preston-1200.jpeg 1100w"
+                    sizes="(max-width:320px) 320px, (max-width:600px) 600px, 1100px">
 
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
-                    <h4><span id="todayText"></span></h4>
                     <p>Current Condition: <span id="currentCond" class="weathervalue">Clear</span> </p>
-                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span class="weathervalue">&#176;F</span></p>
-                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span></p>
-                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span class="weathervalue">&#176;F</span></p>
-                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span></p>
-                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span class="weathervalue">mph</span></p>
+                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span>
+                    </p>
+                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span>
+                    </p>
+                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span
+                            class="weathervalue">mph</span></p>
                 </section>
             </div>
             <div class="forecast">
@@ -99,20 +104,15 @@
                 </div>
             </section>
 
-            <section id="contact-row">
-                <div class="leftColumn">
-                    <h2>Dave's Weather Site</h2>
-                    <p>Somwhere Road</p>
-                    <p>Preston, ID</p>
-                    <p>867-5309</p>
-                    <p>davesweather@notreal.com</p>
+            <section id="mapSection">
+                <div>
+                    <h1>Here is a map to help you get around!</h1>
                 </div>
-                <div class="rightColumn">
-                    <a href="https://goo.gl/maps/Kg6wT5pREJR2" target="_blank">
-                        <img src="images/preston-map-500.jpg" alt="Preston ID">
-                    </a>
+                <div id="map-div">
+                 
                 </div>
             </section>
+
         </main>
 
         <footer>
@@ -120,9 +120,11 @@
 
                 <div class="footerLeftColumn"><span id="currentDate"></span></div>
 
-                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons"
+                        title="Roundicons">Roundicons</a>
                     from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a></div>
+                        href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a>
+                </div>
                 <div> Weather data sourced from <a href="https://openweathermap.org/" title="Open Weather Maps">Open
                         Weather Maps</a> </div>
             </section>
