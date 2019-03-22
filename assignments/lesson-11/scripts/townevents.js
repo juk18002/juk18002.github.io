@@ -4,14 +4,14 @@ var town = script_tag.getAttribute("data-event");
 //get the card container div
 var eventHolder = document.getElementById("event-div");
 //get the json data
-var requestURL = 'https://juk18002.github.io/assignments/lesson-9/data/towndata.json';
+var requestURL = 'https://juk18002.github.io/assignments/lesson-11/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-    var varJSON = JSON.parse(request.response);
+    var varJSON = request.response;
     insertTownEvents(varJSON);
 }
 
@@ -30,7 +30,7 @@ function insertTownEvents(textJSON) {
                 newDiv.appendChild(pEvent);
             }
             eventHolder.appendChild(newDiv)
-            document.getElementById("map").innerHTML = objJSON.googleMapsURL;
+            document.getElementById("map-div").innerHTML = objJSON.googleMapsURL;
         }
     }
 }
