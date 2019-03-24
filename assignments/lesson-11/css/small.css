@@ -253,7 +253,7 @@ form label.top input:valid {
   position: relative;
   width: 320px;
   min-width: 320px;
-  height: 360px;
+  height: 400px;
   border: 1px solid #3a7d44;
   background-image: radial-gradient(circle, #d0db97, #b8d28c, #a0c884, #85bf7d, #69b578);
 }
@@ -261,6 +261,7 @@ form label.top input:valid {
 .card img {
   position: absolute;
   bottom: 0;
+  width:100%;
 }
 
 .scrolling-wrapper h3 {
