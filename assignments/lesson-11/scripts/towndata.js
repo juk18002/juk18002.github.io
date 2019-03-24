@@ -5,7 +5,7 @@ var townList = new Array("Preston", "Soda Springs", "Fish Haven", "Franklin", "G
 
 //get the json data
 //var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var requestURL = 'https://juk18002.github.io/assignments/lesson-9/data/towndata.json';
+var requestURL = 'https://juk18002.github.io/assignments/lesson-11/data/towndata.json';
       
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -46,7 +46,7 @@ function createTownCards(textJSON) {
             pAvgRain.textContent = 'Average Rainfall: ' + objJSON.averageRainfall + '"';
             //img
             var iPreston = document.createElement('img');
-            iPreston.src = "images/preston-320.jpeg";
+            iPreston.src = objJSON.smallImageLocation;
             iPreston.alt = "Preston";
 
             divCard.appendChild(h2TownName);

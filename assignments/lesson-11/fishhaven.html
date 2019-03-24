@@ -28,7 +28,7 @@
                     <p id="logoText"> The sun doesn't always shine! </p>
                 </div>
             </div>
-            
+
             <nav>
                 <ul class="navigation">
                     <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -43,21 +43,25 @@
         </header>
 
         <main>
-                <div class="townname">
+            <div class="townname">
                 <h1>Fish Haven</h1>
             </div>
             <div class="herodiv">
-                <img src="images/preston-default.jpeg" alt="cloudy" srcset="images/preston-320.jpeg 600w,
-                         images/preston-1200.jpeg 1100w"
-                    sizes="(max-width:320px) 320px, (max-width:600px) 600px, 1100px">
+                <img src="images/clouds-winter-1200.jpeg" alt="cloudy" srcset="images/clouds-winter-320.jpeg 600w,
+                images/clouds-winter-1200.jpeg 1100w" sizes="(max-width:320px) 320px, (max-width:600px) 600px, 1100px">
 
                 <section class="weathersummary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span class="weathervalue">&#176;F</span></p>
-                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span></p>
-                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span class="weathervalue">&#176;F</span></p>
-                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span></p>
-                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span class="weathervalue">mph</span></p>
+                    <p>Currently: <span id="currentTemp" class="weathervalue">76</span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>High: <span id="highTemp" class="weathervalue">80</span><span class="weathervalue">&#176;F</span>
+                    </p>
+                    <p>Wind Chill: <span id="windChill" class="weathervalue"></span><span
+                            class="weathervalue">&#176;F</span></p>
+                    <p>Humidity: <span id="humidity" class="weathervalue">69</span><span class="weathervalue">%</span>
+                    </p>
+                    <p>Wind Speed: <span id="windSpeed" class="weathervalue">5</span><span
+                            class="weathervalue">mph</span></p>
                 </section>
             </div>
             <div class="forecast">
@@ -85,11 +89,11 @@
             <section id="article-row">
                 <!-- this is second row of content-->
                 <div class="leftColumn">
-                        <h2>
-                                Upcoming Events in Town
-                            </h2>
-                            <div class="event" id="event-div">
-                            </div>
+                    <h2>
+                        Upcoming Events in Town
+                    </h2>
+                    <div class="event" id="event-div">
+                    </div>
                 </div>
                 <div class="rightColumn">
                     <img src="images/Optimized-skiing.jpeg" alt="Skiing!">
@@ -131,7 +135,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script id="weatherapiScript" data-town="Fish Haven" src="scripts/weatherapi.js"></script>
-    <script  id="forecastScript" data-town="Fish Haven" src="scripts/forecast.js"></script>
+    <script id="forecastScript" data-town="Fish Haven" src="scripts/forecast.js"></script>
     <script id="townEventScript" data-event="Fish Haven" src="scripts/townevents.js"></script>
 
 </body>
