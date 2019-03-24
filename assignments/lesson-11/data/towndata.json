@@ -7,7 +7,7 @@
       "currentPopulation": 30458,
       "averageRainfall": 21,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
-      "smallImageLocation": "images/clouds-winter-320.jpeg",
+      "smallImageLocation": "images\/clouds-winter-320.jpeg",
        "events" : [
         "March 4: March to the Drum of Donuts",
         "September 5 - 11: Founder Days",
@@ -21,7 +21,7 @@
       "currentPopulation": 501,
       "averageRainfall": 14.20,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d5926.479392023981!2d-111.40050140116453!3d42.03804016643119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553286630881\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
-      "smallImageLocation": "images/fish_haven-320.jpg",
+      "smallImageLocation": "images\/fish_haven-320.jpg",
        "events" : [
         "April 1: How Big Was That Fish Day",
         "May 15-30: Rush the Creek Days",
@@ -36,7 +36,7 @@
       "currentPopulation": 33458,
       "averageRainfall": 25,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11101.222593401932!2d-116.12856776491769!3d45.925190614103606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a0c1784b5a468d%3A0xc1b554fc4611c93c!2sGrangeville%2C+ID+83530!5e0!3m2!1sen!2sus!4v1553286682423\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
-      "smallImageLocation": "images/greenville_id-320.jpg",
+      "smallImageLocation": "images\/greenville_id-320.jpg",
        "events" : [
         "February 10-12: Greenbration",
         "May 8 - 18: Greenville Founder Days",
@@ -51,7 +51,7 @@
       "currentPopulation": 512,
       "averageRainfall": 39,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11491.173814077009!2d-115.95425271587109!3d43.942948114157005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54af2379273d5983%3A0x62aaf599dca42e42!2sPlacerville%2C+ID!5e0!3m2!1sen!2sus!4v1553286778996\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
-      "smallImageLocation": "images/placerton-320.jpeg",
+      "smallImageLocation": "images\/placerton-320.jpeg",
        "events" : [
         "July 4: A Blaze of Glory",
         "October 20: Fall through Fall"
@@ -64,7 +64,7 @@
       "currentPopulation": 5204,
       "averageRainfall": 16.65,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d94731.38112578721!2d-111.95019315420407!3d42.09985313173418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1553288280786\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>" ,
-      "smallImageLocation": "images/preston-320.jpeg",
+      "smallImageLocation": "images\/preston-320.jpeg",
        "events" : [
         "March 29: Work Creek Revival",
         "July 8-12: Napoleon Dynamite Festival",
@@ -92,7 +92,7 @@
       "currentPopulation": 17852,
       "averageRainfall": 17,
       "googleMapsURL":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11656.364569878173!2d-112.69070861627502!3d43.08157916468151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53556f4654fe39ad%3A0x1001437960f9caee!2sSpringfield%2C+ID+83277!5e0!3m2!1sen!2sus!4v1553286838840\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
-      "smallImageLocation": "images/springfield-320.jpeg",
+      "smallImageLocation": "images\/springfield-320.jpeg",
        "events" : [
         "January 8: Spring into Winter",
         "April 10-20: Celebration of Life",
