@@ -2,6 +2,7 @@
   .navigation li:first-child {
     display: none;
   }
+
   .navigation {
     display: block;
     width: 130px;
@@ -13,42 +14,45 @@
     padding: 8px 0;
     background-color: #69b578;
   }
-  
+
   .navigation a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     display: block;
   }
- 
+
   .navigation li {
     display: block;
     flex: 1 1 auto;
   }
-main {
-  margin-left: 140px; 
-  padding: 0px 10px;
-}
 
-}
-  .forecast {
-    display: block;
-  }
-  .grid-gallery {
-    grid-template-columns: repeat(2, .75fr);
-  }
-  .herodiv {
-    margin: 10px auto;
-    position: relative;
-  }
-  .herodiv img {
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
+  main {
+    margin-left: 140px;
+    padding: 0px 10px;
   }
 
- 
+.forecast {
+  display: block;
+}
+
+.grid-gallery {
+  grid-template-columns: repeat(2, .75fr);
+}
+
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+}
+
+.herodiv img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+
 .weathersummary {
   text-align: center;
   border: 1px solid #000;
@@ -56,5 +60,5 @@ main {
   box-shadow: 0 0 30px #fff;
   background: radial-gradient(#eee, #69b578);
 }
- 
+
 }
