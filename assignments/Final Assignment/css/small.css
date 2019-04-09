@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: white;
+  }
+  
+  h1, h2, h3, h4, p {
+    color: #85bdde;
+  }
+  
+  h1 {
+    font-size: 4.8em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  
+  h2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2.4em;
+  }
+  
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+  }
+  
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.76em;
+    font-style: italic;
+  }
+  
+  p {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  li {
+    font-size: 1.6rem;
+    color:#cb2c31;
+  }
+  .footertext p {
+    font-size: .8rem;
+  }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  ul.topnav li {
+    float: left;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    text-align: center;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    color: #85bdde;
+  }
+  
+  ul.topnav li a:hover:not(.active) {
+    background-color: #c4e6ff;
+  }
+  
+  ul.topnav li a.active {
+    background-color: #e69598;
+    color: white
+  }
+  
+  .submitBtn {
+    display: block;
+    border: none;
+    background-color: #85bdde;
+    color: #ccebfb;
+    border-radius: 1rem;
+    padding: .75rem;
+    margin: 2rem auto;
+    width: 96%;
+    max-width: 22rem;
+    box-shadow: 10px 10px 30px #ccebfb;
+  }
+  
+  #hero-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  
+  .motto h1, .motto h3 { 
+    text-shadow: 2px 2px black; 
+  }
+
+  @media screen and (max-width: 48rem) {
+    ul.topnav li.right, ul.topnav li {
+      float: none;
+    }
+    ul.topnav li a {
+      font-size: 1.6em;
+    }
+  }
