@@ -1,0 +1,200 @@
+{
+    "temples": [{
+        "name": "Dallas Texas",
+        "streetAddress": "6363 Willow Ln",
+        "city": "Dallas",
+        "state": "TX",
+        "postal_code": "75230-2227",
+        "country": "United States",
+        "telephone": "19729911273",
+        "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/dallas-texas-temple?lang=eng",
+        "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+        "services": {
+            "clothingRental": true,
+            "cateteria": true,
+            "patronHousing": false,
+            "dcNear": true
+        },
+        "closures": [
+            "Monday, 22 April 2019 - Monday, 6 May 2019",
+            "Thursday, 4 July 2019",
+            "Tuesday, 1 October 2019 - Monday, 11 November 2019",
+            "Wednesday, 27 November 2019 (Limited Hours)",
+            "Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+            "Tuesday, 31 December 2019"
+        ],
+        "milestones": [
+            "1 April 1981 Announced",
+            "22 January 1983Groundbreaking",
+            "19 October 1984Dedicated",
+            "5 March 1989 Rededicated"
+        ],
+        "ordinanceSchedule": {
+            "baptismal": [
+                "7:00 AM - 6:00 PM Family Priority Time - Walk-ins and Appointments",
+                "6:00 PM - 8:00 PM Church Groups - Appointments Only",
+                "8:00 PM - 10:00 PM Church Groups - Appointments Only"
+            ],
+            "initiatory": [
+                "7:00 AM - 9:30 PM Walk-ins and Appointments"
+            ],
+            "endowment": [
+                "10:00 AM Walk-ins and Appointments",
+                "11:00 AM Walk-ins and Appointments",
+                "12:00 PM Walk-ins and Appointments",
+                "1:00 PM Walk-ins and Appointments"
+            ],
+            "sealing": [
+                "7:00 AM - 9:30 PM Walk-ins and Appointments"
+            ]
+
+        },
+        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+    }, {
+        "name": "Los Angles California",
+        "streetAddress": "10777 Santa Monica Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "postal_code": "90025-4718",
+        "country": "United States",
+        "telephone": "13104745569",
+        "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/los-angeles-california-temple?lang=eng",
+        "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+        "services": {
+            "clothingRental": true,
+            "cateteria": true,
+            "patronHousing": true,
+            "dcNear": true
+        },
+        "closures": [
+            "Tuesday, 25 June 2019 - Monday, 30 September 2019",
+            "Saturday, 5 October 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Friday, 29 November 2019 (Limited Hours)",
+            "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+            "Tuesday, 31 December 2019"
+        ],
+        "milestones": [
+            "6 March 1937 Announced",
+            "22 September 1951 Groundbreaking",
+            "11 March 1956 Dedicated"
+        ],
+        "ordinanceSchedule": {
+            "baptismal": [
+                "7:30 AM - 8:00 PM Walk-ins and Appointments"
+            ],
+            "initiatory": [
+                "For initiatory information and schedule, please call the temple."
+            ],
+            "endowment": [
+                "11:45 AM Walk-ins and Appointments - English",
+                "1:00 PM Walk-ins and Appointments - English",
+                "2:15 PM Walk-ins and Appointments - English",
+                "3:30 PM Walk-ins and Appointments – English"
+            ],
+            "sealing": [
+                "6:00 AM - 8:00 PM Walk-ins and Appointments"
+            ]
+
+        },
+        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+    }, {
+        "name": "Nauvoo Illinois",
+        "streetAddress": "50 N Wells St",
+        "city": "Nauvoo IL 62354",
+        "state": "IL",
+        "postal_code": "62354",
+        "country": "United States",
+        "telephone": "12174536252",
+        "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/nauvoo-illinois-temple?lang=eng",
+        "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+        "services": {
+            "clothingRental": true,
+            "cateteria": false,
+            "patronHousing": false,
+            "dcNear": false
+        },
+        "closures": [
+            "Monday, 29 April 2019 - Sunday, 12 May 2019",
+            "Saturday, 5 October 2019",
+            "Monday, 11 November 2019 - Monday, 25 November 2019",
+            "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+            "Wednesday, 27 November 2019 (Limited Hours)",
+            "Wednesday, 25 December 2019"
+        ],
+        "milestones": [
+            "4 April 1999 Announced",
+            "24 October 1999 Groundbreaking",
+            "27 June 2002 Dedicated — dedicatory prayer"
+        ],
+        "ordinanceSchedule": {
+            "baptismal": [
+                "3:00 PM - 8:00 PM Walk-ins and Appointments"
+            ],
+            "initiatory": [
+                "3:00 PM - 8:00 PM Walk-ins and Appointments"
+            ],
+            "endowment": [
+                "3:00 PM Walk-ins and Appointments",
+                "4:00 PM Walk-ins and Appointments",
+                "5:00 PM Walk-ins and Appointments",
+                "6:00 PM Walk-ins and Appointments"
+            ],
+            "sealing": [
+                "3:00 PM - 8:00 PM Walk-ins and Appointments"
+            ]
+
+        },
+        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+    }, {
+        "name": "Toronto Ontario",
+        "streetAddress": "10060 Bramalea Rd",
+        "city": "Brampton",
+        "state": "ON",
+        "postal_code": "L6R 1A1",
+        "country": "Canada",
+        "telephone": "19057991122",
+        "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/toronto-ontario-temple?lang=eng",
+        "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
+        "services": {
+            "clothingRental": true,
+            "cateteria": false,
+            "patronHousing": false,
+            "dcNear": true
+        },
+        "closures": [
+            "Monday, 19 August 2019 - Saturday, 31 August 2019",
+            "Saturday, 5 October 2019",
+            "Tuesday, 24 December 2019",
+            "Wednesday, 25 December 2019 - Thursday, 26 December 2019",
+            "Tuesday, 31 December 2019"
+        ],
+        "milestones": [
+            "7 April 1984 Announced",
+            "10 October 1987 Groundbreaking",
+            "25 August 1990 Dedicated"
+        ],
+        "ordinanceSchedule": {
+            "baptismal": [
+                "7:00 AM - 6:00 PM Family Priority Time - Walk-ins and Appointments",
+                "6:00 PM - 8:00 PM Church Groups - Appointments Only",
+                "8:00 PM - 10:00 PM Church Groups - Appointments Only"
+            ],
+            "initiatory": [
+                "7:00 AM - 9:30 PM Walk-ins and Appointments"
+            ],
+            "endowment": [
+                "10:00 AM Walk-ins and Appointments",
+                "11:00 AM Walk-ins and Appointments",
+                "12:00 PM Walk-ins and Appointments",
+                "1:00 PM Walk-ins and Appointments"
+            ],
+            "sealing": [
+                "7:00 AM - 9:30 PM Walk-ins and Appointments"
+            ]
+
+        },
+        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+    }]
+}

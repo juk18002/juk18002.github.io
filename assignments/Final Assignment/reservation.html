@@ -34,6 +34,58 @@
   <main>
     <form method="get" action="thanks.html">
 
+                <!-- User Info section -->
+                <fieldset id=userInfo>
+                    <legend>User Information</legend>
+                    <!-- full name - require - only alpha - min of 5 char -->
+                    <label class="top">Full Name* <input type="text" name="fullName" required
+                            pattern="[A-Za-z].{5,}"></label>
+                    <!-- email - use a placeholder -->
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@nowhere.com"></label>
+                    <!-- phone number - require - tel -->
+                    <label class="top">Phone Number* <input type="tel" name="phoneNum" required></label>
+                    <!-- zip code - required -->
+                    <label class="top">Zip Code <input type="number" name="zipCode" required></label>
+                    <div>User In danger</div>
+                    <label class="sbs">Yes <input type="radio" id="udYes" name="userDanger"></label>
+                    <label class="sbs">Maybe <input type="radio" id="udMaybe" name="userDanger"></label>
+                    <label class="sbs">No <input type="radio" id="udNo" name="userDanger"></label>
+                </fieldset>
+
+                <!-- Storm Info Section -->
+                <fieldset id="stormInfo">
+                    <legend class="top">Storm Information</legend>
+                    <!-- storm date - date -->
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <!-- storm type - list - data list: "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado." -->
+                    <label class="top">Storm Type
+                        <input type="text" name="i_StormType" list="dl_StormType">
+                        <datalist id="dl_StormType">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist></label>
+                    <!-- storm severity - range from 1-10 with label  -->
+
+                    <label class="top2">Storm Severity <input type="range" name="stormSeverity" value="5" min="1"
+                            max="10" step="1" class="slider" id="myRange" oninput="adjustSeverity(this.value)"
+                            onchange="adjustSeverity(this.value)">The storm's severity is <span
+                            id="severityvalue">5</span></label>
+
+                    <!-- storm region -->
+                    <label class="top">Storm Region
+                        <select id="s_StormRegion" name="stormregion">
+                            <option value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select></label>
+                    <!-- additional information or comments - text area -->
+                    <label class="top"> Additional Information / Comments <textarea name="comments" id="inputComments"
+                            rows="4" , cols="40"></textarea></label>
+                </fieldset>
           <!-- form submission button - submit -->
           <input type="submit" value="Reserve Room Now" class="submitBtn">
         </form>
