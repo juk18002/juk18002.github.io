@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Temple Inn & Suites - Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Style Sheet references <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">       -->
+  <link rel="stylesheet" href="css/small.css">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Lato|Playfair+Display|Raleway"
+    rel="stylesheet">
+
+  <!-- Java Script file references -->
+
+</head>
+
+<body>
+  <header>
+    <div class="motto">
+      <h1>Temple Inn & Suites</h1>
+      <h3 id="logoText"> Worry free accomodations for your trip to the temple. </h3>
+      <img src="images/la-temple-467.jpg" alt="L.A. Temple">
+    </div>
+    <div id="navDiv">
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temple</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li ><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div>
+      <h2>
+       Contact Us
+      </h2>
+      <p>Our offices are located in beatiful Maryland:</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019705722!2d-77.09772584886262!3d38.98325177945711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554922849698!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <form method="get" action="thanks.html">
+
+      <!-- User Info section -->
+      <fieldset id=userInfo>
+          <legend>Contact Information</legend>
+          <!-- full name - require - only alpha - min of 5 char -->
+          <label class="top">Full Name* <input type="text" name="fullName" required
+                  pattern="[A-Za-z].{5,}"></label>
+          <!-- email - use a placeholder -->
+          <label class="top">Email <input type="email" name="email" placeholder="someone@nowhere.com"></label>
+          <!-- phone number - require - tel -->
+          <label class="top">Phone Number* <input type="tel" name="phoneNum" required></label>
+          <!-- zip code - required -->
+          <label class="top">Zip Code <input type="number" name="zipCode" required></label>
+           <!-- Country - required -->
+           <label class="top">Country <input type="text" name="country" required></label> 
+      </fieldset>
+
+      <!-- Room Info Section -->
+      <fieldset id="inquiryInfo">
+          <legend class="top">What can we help you with?</legend>
+          <!-- Check In date - date -->
+         <!-- additional information or comments - text area -->
+          <label class="top"> Questions / Comments <textarea name="comments" id="inputComments"
+                  rows="4" , cols="40"></textarea></label>
+      </fieldset>
+<!-- form submission button - submit -->
+<input type="submit" value="Contact Us" class="submitBtn">
+</form>
+
+
+  </main>
+</body>
+
+</html>
