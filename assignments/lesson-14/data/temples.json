@@ -1,6 +1,6 @@
 {
     "temples": [{
-        "name": "Dallas Texas",
+        "name": "Dallas Texas Temple",
         "streetAddress": "6363 Willow Ln",
         "city": "Dallas",
         "state": "TX",
@@ -50,9 +50,9 @@
             ]
 
         },
-        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+        "smallImageLocation": "images\/clouds-winter-320.jpeg"
     }, {
-        "name": "Los Angles California",
+        "name": "Los Angles California Temple",
         "streetAddress": "10777 Santa Monica Blvd",
         "city": "Los Angeles",
         "state": "CA",
@@ -98,9 +98,9 @@
             ]
 
         },
-        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+        "smallImageLocation": "images\/clouds-winter-320.jpeg"
     }, {
-        "name": "Nauvoo Illinois",
+        "name": "Nauvoo Illinois Temple",
         "streetAddress": "50 N Wells St",
         "city": "Nauvoo IL 62354",
         "state": "IL",
@@ -146,9 +146,9 @@
             ]
 
         },
-        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+        "smallImageLocation": "images\/clouds-winter-320.jpeg"
     }, {
-        "name": "Toronto Ontario",
+        "name": "Toronto Ontario Temple",
         "streetAddress": "10060 Bramalea Rd",
         "city": "Brampton",
         "state": "ON",
@@ -195,6 +195,6 @@
             ]
 
         },
-        "smallImageLocation": "images\/clouds-winter-320.jpeg",
+        "smallImageLocation": "images\/clouds-winter-320.jpeg"
     }]
-}
+} 
