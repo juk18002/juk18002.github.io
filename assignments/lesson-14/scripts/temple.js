@@ -42,6 +42,19 @@ function createTemples(textJSON) {
         h1TempleName.textContent = objJSON.name;
         tempDiv.appendChild(h1TempleName);
 
+        var city = objJSON.city;
+        var apiURLString = "https://api.openweathermap.org/data/2.5/weather?q=" + city + ",us&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
+        var weatherRequest = new XMLHttpRequest();
+        weatherRequest.open('GET', apiURLString, true);
+        weatherRequest.send();
+        weatherRequest.onload = function () {
+            let weatherData = JSON.parse(weatherRequest.responseText);
+            //console.log(weatherData);
+            var weatherText = "The current weather condition in " + objJSON.city +" is " + weatherData.weather[0].main + ", the temperature is " + weatherData.main.temp + "."
+           var pWeather = document.createElement('p');
+           pWeather.textContent=weatherText;
+           tempDiv.appendChild(pWeather);
+        }
         //Contact Div
         var contactDiv = document.createElement('div');
         contactDiv.className = 'temple-contact';
@@ -62,6 +75,7 @@ function createTemples(textJSON) {
         contactDiv.appendChild(pCountry);
         contactDiv.appendChild(pPhone);
         contactDiv.appendChild(aURL);
+
 
         //Services
         var servDiv = document.createElement('div');
@@ -189,3 +203,5 @@ function createTemples(textJSON) {
     }
 
 }
+
+
