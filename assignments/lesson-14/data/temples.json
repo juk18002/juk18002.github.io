@@ -6,12 +6,12 @@
         "state": "TX",
         "postal_code": "75230-2227",
         "country": "United States",
-        "telephone": "19729911273",
+        "telephone": "(1) 972-991-1273",
         "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/dallas-texas-temple?lang=eng",
         "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
         "services": {
             "clothingRental": true,
-            "cateteria": true,
+            "cafeteria": true,
             "patronHousing": false,
             "dcNear": true
         },
@@ -58,12 +58,12 @@
         "state": "CA",
         "postal_code": "90025-4718",
         "country": "United States",
-        "telephone": "13104745569",
+        "telephone": "(1) 310-474-5569",
         "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/los-angeles-california-temple?lang=eng",
         "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
         "services": {
             "clothingRental": true,
-            "cateteria": true,
+            "cafeteria": true,
             "patronHousing": true,
             "dcNear": true
         },
@@ -106,12 +106,12 @@
         "state": "IL",
         "postal_code": "62354",
         "country": "United States",
-        "telephone": "12174536252",
+        "telephone": "(1) 217-453-6252",
         "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/nauvoo-illinois-temple?lang=eng",
         "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
         "services": {
             "clothingRental": true,
-            "cateteria": false,
+            "cafeteria": false,
             "patronHousing": false,
             "dcNear": false
         },
@@ -154,12 +154,12 @@
         "state": "ON",
         "postal_code": "L6R 1A1",
         "country": "Canada",
-        "telephone": "19057991122",
+        "telephone": "(1) 905-799-1122",
         "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/toronto-ontario-temple?lang=eng",
         "googleMapsURL": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d11856.563414618251!2d-111.81204261676451!3d42.01871066574637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87545e9663332cd3%3A0x6c702e7a4fbfdd16!2sFranklin%2C+ID+83237!5e0!3m2!1sen!2sus!4v1553286492068\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>",
         "services": {
             "clothingRental": true,
-            "cateteria": false,
+            "cafeteria": false,
             "patronHousing": false,
             "dcNear": true
         },
