@@ -90,19 +90,21 @@ html {
     max-width: 22rem;
     box-shadow: 10px 10px 30px #ccebfb;
   }
-  
-  #hero-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-  }
-  
+ 
   .motto h1, .motto h3 { 
     text-shadow: 2px 2px black; 
   }
 
-  
+.motto  {
+  background-image: url("dallas-temple-lds-1200.jpeg");  
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .grid-gallery {
   max-width: 100%;
   margin-right: auto;
