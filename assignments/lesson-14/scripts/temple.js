@@ -42,19 +42,6 @@ function createTemples(textJSON) {
         h1TempleName.textContent = objJSON.name;
         tempDiv.appendChild(h1TempleName);
 
-        var city = objJSON.city;
-        var apiURLString = "https://api.openweathermap.org/data/2.5/weather?q=" + city + ",us&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
-        var weatherRequest = new XMLHttpRequest();
-        weatherRequest.open('GET', apiURLString, true);
-        weatherRequest.send();
-        weatherRequest.onload = function () {
-            let weatherData = JSON.parse(weatherRequest.responseText);
-            //console.log(weatherData);
-            var weatherText = "The current weather condition in " + objJSON.city +" is " + weatherData.weather[0].main + ", the temperature is " + weatherData.main.temp + "."
-           var pWeather = document.createElement('p');
-           pWeather.textContent=weatherText;
-           tempDiv.appendChild(pWeather);
-        }
         //Contact Div
         var contactDiv = document.createElement('div');
         contactDiv.className = 'temple-contact';
@@ -85,7 +72,6 @@ function createTemples(textJSON) {
         h4Serv.textContent = "Services";
         servDiv.appendChild(h4Serv);
         var objServ = objJSON.services;
-
         var pRental = document.createElement('p');
         if (objServ.clothingRental) {
             pRental.textContent = "Clothing rental available"
@@ -93,7 +79,6 @@ function createTemples(textJSON) {
             pRental.textContent = "No clothing rental available"
         }
         servDiv.appendChild(pRental);
-
         var pcafeteria = document.createElement('p');
         if (objServ.cafeteria) {
             pcafeteria.textContent = "Cafeteria available"
@@ -101,7 +86,6 @@ function createTemples(textJSON) {
             pcafeteria.textContent = "No cafeteria available"
         }
         servDiv.appendChild(pcafeteria);
-
         var pHousing = document.createElement('p');
         if (objServ.patronHousing) {
             pHousing.textContent = "Patron Housing available"
@@ -109,7 +93,6 @@ function createTemples(textJSON) {
             pHousing.textContent = "No patron housing available"
         }
         servDiv.appendChild(pHousing);
-
         var pDC = document.createElement('p');
         if (objServ.dcNear) {
             pDC.textContent = "Distribution center nearby"
@@ -149,25 +132,25 @@ function createTemples(textJSON) {
             ordDiv.appendChild(pInitSch);
         }
 
-           var h4End = document.createElement('h4');
-           h4End.textContent = 'Endowment Schedule'
-           ordDiv.appendChild(h4End);
-           var ordEnd = objJSON.ordinanceSchedule.endowment;
-           for (l = 0; l < ordEnd.length; l++) {
-               var pEndSch = document.createElement('p');
-               pEndSch.textContent = ordEnd[l];
-               ordDiv.appendChild(pEndSch);
-           }
+        var h4End = document.createElement('h4');
+        h4End.textContent = 'Endowment Schedule'
+        ordDiv.appendChild(h4End);
+        var ordEnd = objJSON.ordinanceSchedule.endowment;
+        for (l = 0; l < ordEnd.length; l++) {
+            var pEndSch = document.createElement('p');
+            pEndSch.textContent = ordEnd[l];
+            ordDiv.appendChild(pEndSch);
+        }
 
-            var h4Seal = document.createElement('h4');
-            h4Seal.textContent = 'Sealing Schedule'
-            ordDiv.appendChild(h4Seal);
-            var ordSeal = objJSON.ordinanceSchedule.sealing;
-            for (m = 0; m < ordSeal.length; m++) {
-                var pSealSch = document.createElement('p');
-                pSealSch.textContent = ordSeal[m];
-                ordDiv.appendChild(pSealSch);
-            }
+        var h4Seal = document.createElement('h4');
+        h4Seal.textContent = 'Sealing Schedule'
+        ordDiv.appendChild(h4Seal);
+        var ordSeal = objJSON.ordinanceSchedule.sealing;
+        for (m = 0; m < ordSeal.length; m++) {
+            var pSealSch = document.createElement('p');
+            pSealSch.textContent = ordSeal[m];
+            ordDiv.appendChild(pSealSch);
+        }
 
         //closure schedule
         var closeDiv = document.createElement('div');
@@ -177,7 +160,7 @@ function createTemples(textJSON) {
         h3Close.textContent = "Closure Schedule";
         closeDiv.appendChild(h3Close);
         var closeObj = objJSON.closures;
-        for (n=0;n<closeObj.length;n++) {
+        for (n = 0; n < closeObj.length; n++) {
             var pClose = document.createElement('p');
             pClose.textContent = closeObj[n];
             closeDiv.appendChild(pClose)
@@ -191,15 +174,34 @@ function createTemples(textJSON) {
         h3Hist.textContent = "Temple History";
         histDiv.appendChild(h3Hist);
         var histObj = objJSON.milestones;
-        for (o=0;o<histObj.length;o++) {
+        for (o = 0; o < histObj.length; o++) {
             var pHist = document.createElement('p');
             pHist.textContent = histObj[o];
             histDiv.appendChild(pHist)
         }
+
+
+        var city = objJSON.city.toString();
+        var apiURLString = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=11bcd0d86618f285952a20f00a263c7c&units=imperial";
+        var weatherRequest = new XMLHttpRequest();
+        weatherRequest.open('GET', apiURLString, true);
+        weatherRequest.send();
+        weatherRequest.onload = function () {
+            let weatherData = JSON.parse(weatherRequest.responseText);
+            //console.log(weatherData);
+            var weatherText = "The current weather condition in " + objJSON.city + " is " + weatherData.weather[0].main + ", the temperature is " + weatherData.main.temp + "."
+            var pWeather = document.createElement('p');
+            pWeather.textContent = weatherText;
+            contactDiv.appendChild(pWeather);
+        }
+
+
+
         var aReturn = document.createElement('a');
         aReturn.setAttribute('href', '#templelist');
         aReturn.innerHTML = 'Return to Temple List';
         tempDiv.appendChild(aReturn);
+
     }
 
 }

@@ -1,3 +1,11 @@
+h1 { color: #c4e6ff}
+h1 { color: #e69598}
+h1 { color: #cb2c31}
+h1 { color: #85bdde}
+h1 { color: #ccebfb}
+
+
+
 html {
     font-size: 62.5%;
   }
@@ -92,7 +100,7 @@ html {
   }
  
   .motto h1, .motto h3 { 
-    text-shadow: 2px 2px black; 
+    color:#727272;
   }
 
 .motto  {
@@ -135,6 +143,109 @@ html {
 .grid-item-gallery:hover {
   box-shadow: 0 0 50px #727272;
 }
+
+
+/*--------------------form------------------------------*/
+
+form {
+  display:flex;
+  flex-flow: row wrap;
+}
+
+form fieldset {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #727272;
+  border-radius: .5rem;
+  padding: .75rem 2%;
+  background-color: #ccebfb ;
+  width: 98%;
+  max-width: 30rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form legend {
+  color: white;
+  background-color: #e69598;
+  border: 1px solid #cb2c31;
+  border-radius: .2rem;
+  padding: 0 .5rem;
+  font-size: 1.6rem;
+}
+
+form label.top,
+form label.top2,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #727272;
+  font-size: 1.2rem;
+}
+
+form label.top input,
+form label.top2 input,
+form label.top textarea,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1.6rem;
+  border: .1rem solid #727272;
+  border-radius: .4rem;
+  color: #727272;
+  width: 100%;
+  max-width: 28rem;
+  background-color: white;
+}
+
+form label.top input,
+form label.top textarea,
+form label.top select {
+  padding: .75rem;
+}
+
+form label.top2 input,
+form label.top select {
+  max-width: 28rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem;
+  color: #727272;
+}
+
+form input.submitBtn {
+  display: block;
+  border: none;
+  background-color: #cb2c31;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem;
+  margin: 2rem auto 2rem auto;
+  width: 96%;
+  max-width: 24rem;
+  box-shadow: 10px 10px 30px #727272;
+}
+
+form label.top input:required {
+  border-left:#cb2c31 solid 6px;
+}
+
+form label.top input:valid {
+  border-left: green solid 6px;
+}
+
+/*--------------------form-end------------------------------*/
+
+
+
+
+
 @media screen and (max-width: 60rem) {
   .grid-gallery {
     grid-template-columns: repeat(2, .75fr);

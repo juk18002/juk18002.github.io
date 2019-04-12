@@ -1,5 +1,6 @@
 {
-    "temples": [{
+    "temples": [
+        {
         "name": "Dallas Texas Temple",
         "streetAddress": "6363 Willow Ln",
         "city": "Dallas",
@@ -56,7 +57,7 @@
         "streetAddress": "10777 Santa Monica Blvd",
         "city": "Los Angeles",
         "state": "CA",
-        "postal_code": "90025-4718",
+        "postal_code": "90025",
         "country": "United States",
         "telephone": "(1) 310-474-5569",
         "ldsTempleURL": "https:\/\/www.lds.org\/temples\/details\/los-angeles-california-temple?lang=eng",
